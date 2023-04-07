@@ -1,4 +1,5 @@
 class EjemploFor{
+	//tabla de multiplicar solo pares
 	/*public static void main(String argas[]){
 		int tabla = 1;
 		for  (int i=0;i<=10;i++){
@@ -10,3 +11,13 @@ class EjemploFor{
 			System.out.println("la tabla"+tabla+"bien");
 	}
 }*/
+
+	public static void main(String[] args) {
+		for (int j=0; j<=20; j++){
+			System.out.println("\n"+"Imprimiendo tabla del "+j);
+			for(int i=0;i<=10;i++){
+				System.out.println(j+"x"+i+"="+(j*i));
+			}
+		}
+	}
+}
