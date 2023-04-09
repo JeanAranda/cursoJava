@@ -13,9 +13,12 @@ class EjemploFor{
 }*/
 
 	public static void main(String[] args) {
-		for (int j=0; j<=20; j++){
+		afuera: for (int j=10; j<=20; j++){
 			System.out.println("\n"+"Imprimiendo tabla del "+j);
-			for(int i=0;i<=10;i++){
+			adentro: for(int i=0;i<=10;i++){
+				if (j%2==1) {
+					continue;
+				}
 				System.out.println(j+"x"+i+"="+(j*i));
 			}
 		}
