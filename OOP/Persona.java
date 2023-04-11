@@ -4,6 +4,9 @@ class Persona {
 	int edad;
 	char genero;
 
+	void juagrVideojuegos(Persona p){
+		System.out.println(nombre+" Esta juagndo con "+p.nombre);
+	}
 	//Metodos
 	void imprimirInformacion(){
 		System.out.println("Nombre: "+nombre);
@@ -23,5 +26,7 @@ class Persona {
 		p1.edad=61;
 		p1.genero='F';
 		p1.imprimirInformacion();
+
+		p.juagrVideojuegos(p1);
 	}
 }
